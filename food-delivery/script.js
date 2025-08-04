@@ -61,6 +61,32 @@ addToCartButtons.forEach(button => {
     });
 });
 
+// Enhanced add to cart functionality for menu page
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('add-to-cart-btn')) {
+        e.preventDefault();
+        
+        const menuItem = e.target.closest('.menu-item-large');
+        if (menuItem) {
+            const itemName = menuItem.querySelector('h3').textContent;
+            const itemPrice = parseFloat(menuItem.querySelector('.price').textContent.replace('$', ''));
+            const itemImage = menuItem.querySelector('img').src;
+            const quantity = parseInt(menuItem.querySelector('.quantity').textContent);
+            
+            // Add item to cart with quantity
+            for (let i = 0; i < quantity; i++) {
+                addToCart(itemName, itemPrice, itemImage);
+            }
+            
+            // Show success message
+            showNotification(`${quantity}x ${itemName} added to cart!`);
+            
+            // Reset quantity to 1
+            menuItem.querySelector('.quantity').textContent = '1';
+        }
+    }
+});
+
 function addToCart(name, price, image) {
     const existingItem = cart.find(item => item.name === name);
     
