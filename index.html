@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartSprout - Effortless Irrigation Management powered by Smart Automation">
+    <meta name="keywords" content="irrigation, smart farming, water management, agriculture">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/226fe332b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>SmartSprout - Smart Irrigation Management</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="logo">
+                        <img src="pics/Group 49.png" alt="SmartSprout Logo">
+                        <h3>SmartSprout</h3>
+                    </div>
+                </div>
+                
+                <div class="nav-center">
+                    <ul class="nav-menu">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How it works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#blog">Blogs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-right">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="pics/pexels-mikhail-nilov-6706847.jpg" alt="User Profile">
+                            <div class="status-dot"></div>
+                        </div>
+                        <button class="search-btn" aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#signin" class="btn btn-secondary">Sign in</a>
+                        <a href="#get-access" class="btn btn-primary">Get access</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Effortless Irrigation Management, powered by Smart Automation</h1>
+                <p>Monitor, schedule and optimize your water usage with real-time insights and precision control</p>
+                <div class="hero-buttons">
+                    <a href="#get-started" class="btn btn-primary">Get Started</a>
+                    <a href="#demo" class="btn btn-secondary">Get a Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="pics/Ellipse 124.png" alt="Irrigation System" class="hero-bg">
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section class="dashboard">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <img src="pics/Group 49.png" alt="SmartSprout Logo">
+                        <h3>SmartSprout</h3>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="farm-selector">
+                    <div class="farm-info">
+                        <div class="farm-indicator"></div>
+                        <div class="farm-details">
+                            <h4>LEGEND FARMS</h4>
+                            <p>78% irrigated</p>
+                        </div>
+                    </div>
+                    <button class="farm-toggle" aria-label="Toggle farm selection">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                </div>
+                
+                <nav class="sidebar-nav">
+                    <a href="#dashboard" class="nav-item active">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#history" class="nav-item">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>History</span>
+                    </a>
+                    <a href="#notifications" class="nav-item">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Notifications</span>
+                        <span class="notification-badge">10</span>
+                    </a>
+                    <a href="#tasks" class="nav-item">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>Tasks</span>
+                    </a>
+                    <a href="#settings" class="nav-item">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+                
+                <div class="user-profile">
+                    <div class="profile-img">
+                        <img src="pics/pexels-mikhail-nilov-6706847.jpg" alt="User Profile">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="user-info">
+                        <p>Legend Presh</p>
+                        <button class="profile-menu" aria-label="Profile menu">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-main">
+                <div class="dashboard-header">
+                    <div class="welcome-section">
+                        <div class="welcome-text">
+                            <h2>Hello Legend</h2>
+                            <p id="current-date">November 7</p>
+                        </div>
+                        <div class="premium-badge">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                    <div class="search-section">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Search..." aria-label="Search">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-content">
+                    <!-- Temperature Probes -->
+                    <div class="probes-grid">
+                        <div class="probe-card">
+                            <div class="probe-info">
+                                <h5>Probe 1 Temperature</h5>
+                                <p class="update-time">5 minutes ago</p>
+                            </div>
+                            <div class="probe-value">
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span>35°C</span>
+                            </div>
+                        </div>
+                        <div class="probe-card">
+                            <div class="probe-info">
+                                <h5>Probe 2 Temperature</h5>
+                                <p class="update-time">5 minutes ago</p>
+                            </div>
+                            <div class="probe-value">
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span>35°C</span>
+                            </div>
+                        </div>
+                        <div class="probe-card">
+                            <div class="probe-info">
+                                <h5>Probe 3 Temperature</h5>
+                                <p class="update-time">5 minutes ago</p>
+                            </div>
+                            <div class="probe-value">
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span>35°C</span>
+                            </div>
+                        </div>
+                        <div class="probe-card">
+                            <div class="probe-info">
+                                <h5>Probe 4 Temperature</h5>
+                                <p class="update-time">5 minutes ago</p>
+                            </div>
+                            <div class="probe-value">
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span>35°C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Dashboard Panels -->
+                    <div class="dashboard-panels">
+                        <!-- Soil Moisture Panel -->
+                        <div class="panel soil-moisture-panel">
+                            <div class="panel-header">
+                                <h4>Soil Moisture Level</h4>
+                                <div class="moisture-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-color fc"></span>
+                                        <span>FC</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color wp"></span>
+                                        <span>WP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moisture-scale">
+                                <div class="scale-labels">
+                                    <span>100%</span>
+                                    <span>70%</span>
+                                    <span>50%</span>
+                                    <span>25%</span>
+                                    <span>0%</span>
+                                </div>
+                                <div class="soil-layers">
+                                    <div class="soil-layer">
+                                        <div class="layer-indicator"></div>
+                                        <span>Sand</span>
+                                    </div>
+                                    <div class="soil-layer">
+                                        <div class="layer-indicator"></div>
+                                        <span>Sand Loam</span>
+                                    </div>
+                                    <div class="soil-layer">
+                                        <div class="layer-indicator"></div>
+                                        <span>Loam</span>
+                                    </div>
+                                    <div class="soil-layer">
+                                        <div class="layer-indicator"></div>
+                                        <span>Silt Loam</span>
+                                    </div>
+                                    <div class="soil-layer">
+                                        <div class="layer-indicator"></div>
+                                        <span>Loam</span>
+                                    </div>
+                                    <div class="soil-layer">
+                                        <div class="layer-indicator"></div>
+                                        <span>Clay</span>
+                                    </div>
+                                </div>
+                                <img src="pics/images__10_-removebg-preview (1).png" alt="Soil Moisture Visualization" class="moisture-visual">
+                            </div>
+                        </div>
+
+                        <!-- Irrigation Status Panel -->
+                        <div class="panel irrigation-status-panel">
+                            <h4>Irrigation Status</h4>
+                            <div class="status-table">
+                                <div class="status-row">
+                                    <div class="status-item">
+                                        <span class="item-number">1.</span>
+                                        <span class="item-name">Sand</span>
+                                    </div>
+                                    <span class="status-badge good">Good</span>
+                                    <img src="pics/Arrow 8.png" alt="Status trend" class="trend-arrow">
+                                    <button class="action-btn" aria-label="More actions">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                                <div class="status-row">
+                                    <div class="status-item">
+                                        <span class="item-number">2.</span>
+                                        <span class="item-name">Clay Loam</span>
+                                    </div>
+                                    <span class="status-badge urgent">Urgent</span>
+                                    <img src="pics/Arrow 9.png" alt="Status trend" class="trend-arrow">
+                                    <button class="action-btn" aria-label="More actions">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                                <div class="status-row">
+                                    <div class="status-item">
+                                        <span class="item-number">3.</span>
+                                        <span class="item-name">Clay Loam</span>
+                                    </div>
+                                    <span class="status-badge urgent">Urgent</span>
+                                    <img src="pics/Arrow 12.png" alt="Status trend" class="trend-arrow">
+                                    <button class="action-btn" aria-label="More actions">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                                <div class="status-row">
+                                    <div class="status-item">
+                                        <span class="item-number">4.</span>
+                                        <span class="item-name">Clay Loam</span>
+                                    </div>
+                                    <span class="status-badge good">Good</span>
+                                    <img src="pics/Arrow 11.png" alt="Status trend" class="trend-arrow">
+                                    <button class="action-btn" aria-label="More actions">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#all-status" class="view-all-link">Check all</a>
+                        </div>
+
+                        <!-- Water Usage Panel -->
+                        <div class="panel water-usage-panel">
+                            <div class="panel-header">
+                                <div class="header-content">
+                                    <h4>Water Usage</h4>
+                                    <p>5 plants</p>
+                                </div>
+                                <button class="panel-menu" aria-label="Panel menu">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                            <div class="plant-legend">
+                                <div class="plant-item">
+                                    <span class="plant-dot rice"></span>
+                                    <span>Rice</span>
+                                </div>
+                                <div class="plant-item">
+                                    <span class="plant-dot beans"></span>
+                                    <span>Beans</span>
+                                </div>
+                                <div class="plant-item">
+                                    <span class="plant-dot tomato"></span>
+                                    <span>Tomato</span>
+                                </div>
+                                <div class="plant-item">
+                                    <span class="plant-dot okra"></span>
+                                    <span>Okra</span>
+                                </div>
+                            </div>
+                            <div class="usage-chart">
+                                <div class="chart-bars">
+                                    <div class="chart-bar rice-bar" data-value="900"></div>
+                                    <div class="chart-bar beans-bar" data-value="541"></div>
+                                    <div class="chart-bar tomato-bar" data-value="600"></div>
+                                    <div class="chart-bar okra-bar" data-value="350"></div>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>900</span>
+                                    <span>541</span>
+                                    <span>600</span>
+                                    <span>350</span>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <span>Details</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Irrigation Efficiency Panel -->
+                        <div class="panel efficiency-panel">
+                            <div class="panel-header">
+                                <div class="header-content">
+                                    <h4>Irrigation Efficiency</h4>
+                                    <p>Drip Irrigation</p>
+                                </div>
+                                <button class="panel-menu" aria-label="Panel menu">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                            <div class="efficiency-gauge">
+                                <img src="pics/images__9_-removebg-preview.png" alt="Efficiency Gauge" class="gauge-image">
+                                <div class="gauge-labels">
+                                    <span>0%</span>
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Efficiency Metrics -->
+                        <div class="panel metrics-panel">
+                            <div class="metric-item">
+                                <span class="metric-value">90%</span>
+                                <span class="metric-label">Conveyance Efficiency</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">70%</span>
+                                <span class="metric-label">Application Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="partners-content">
+                <h3>Irrigation made Easy</h3>
+                <p>For sustainable and efficient water management</p>
+            </div>
+            <div class="partners-logos">
+                <img src="pics/Group.png" alt="Partner Logo">
+                <img src="pics/Waterloo_ION_logo logo.png" alt="Waterloo ION Logo">
+                <img src="pics/Logo_chambre_agriculture logo.png" alt="Chambre Agriculture Logo">
+                <img src="pics/Group.png" alt="Partner Logo">
+                <img src="pics/Waterloo_ION_logo logo.png" alt="Waterloo ION Logo">
+                <img src="pics/US-AgriculturalResearchService-Logo logo.png" alt="US Agricultural Research Service Logo">
+            </div>
+            <a href="#partners" class="partners-link">Our top users</a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="features-header">
+                <h3>Power Features For Smarter Irrigation Management</h3>
+                <p>Our irrigation software is designed to make managing your water resources easier, more efficient and data-driven.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card large">
+                    <div class="feature-content">
+                        <h4>Automated Scheduling</h4>
+                        <p>Set precise irrigation schedules based on weather forecast and soil conditions</p>
+                    </div>
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h4>Real-Time Monitoring</h4>
+                        <p>Track moisture levels and water usage from the comfort of your home</p>
+                    </div>
+                    <i class="fa-solid fa-display"></i>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h4>Data Analytics</h4>
+                        <p>Make informed decisions with historical data and reports</p>
+                    </div>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h4>Mobile Access</h4>
+                        <p>Control irrigation system from your smartphone or tablets</p>
+                    </div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h4>Weather-Based Irrigation</h4>
+                        <p>Automatically adjust your irrigation schedules based on real-time weather data</p>
+                    </div>
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <h3>How it Works</h3>
+            <div class="process-timeline">
+                <div class="process-step left">
+                    <div class="step-icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Sign Up and Connect</h4>
+                        <p>Create an account and link your irrigation system to the app.</p>
+                    </div>
+                    <div class="step-arrow"></div>
+                </div>
+                
+                <div class="process-step right">
+                    <div class="step-icon">
+                        <i class="fa-regular fa-handshake"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Set up your preferences</h4>
+                        <p>Enter details about your crops, garden or landscape and choose your watering goals</p>
+                    </div>
+                    <div class="step-arrow"></div>
+                </div>
+                
+                <div class="process-step left">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-cogs"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Automatic Scheduling</h4>
+                        <p>The app uses real-time weather data and soil moisture levels to create the best watering schedules for your needs.</p>
+                    </div>
+                    <div class="step-arrow"></div>
+                </div>
+                
+                <div class="process-step right">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Monitor and Adjust</h4>
+                        <p>Check your irrigation system anytime through the app. You can make changes or pause watering when needed.</p>
+                    </div>
+                    <div class="step-arrow"></div>
+                </div>
+                
+                <div class="process-step left">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Track your progress</h4>
+                        <p>View reports to see water usage and savings over time</p>
+                    </div>
+                    <div class="step-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What is this app used for?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SmartSprout is an intelligent irrigation management system that helps farmers and landscapers optimize water usage through automated scheduling, real-time monitoring, and data-driven insights.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Do I need special equipment?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you'll need compatible irrigation controllers and sensors that can connect to our system. We provide a list of supported devices and can help you set up the necessary hardware.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I control the system from my phone?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our mobile app allows you to monitor and control your irrigation system from anywhere. You can adjust schedules, check status, and receive notifications on your smartphone or tablet.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How accurate is the weather-based scheduling?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our system uses multiple weather data sources and local sensors to provide highly accurate scheduling. The system continuously learns and adapts to your specific location and conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What kind of support do you provide?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer 24/7 customer support, comprehensive documentation, video tutorials, and personalized setup assistance to ensure you get the most out of your SmartSprout system.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Is my data secure?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we use enterprise-grade security measures to protect your data. All information is encrypted, and we never share your data with third parties without your explicit consent.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <h3>Control your watering Anytime, Anywhere</h3>
+            <p>Sign up to manage your irrigation system remotely and efficiently.</p>
+            <a href="#get-started" class="btn btn-primary">Get Started</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="pics/Group 49.png" alt="SmartSprout Logo">
+                        <h3>SmartSprout</h3>
+                    </div>
+                    <p>Learn more about our mission to help farmers and landscapers save water and improve their irrigation systems</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#support">Support</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="newsletter">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <p>Sign up to receive tips, updates and special offers directly in your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bg">
+                <img src="pics/Ellipse 124.png" alt="Footer Background">
+            </div>
+        </footer>
+        
+        <div class="copyright">
+            <p>&copy; 2024 SmartSprout. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
